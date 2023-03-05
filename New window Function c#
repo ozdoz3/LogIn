@@ -1,0 +1,8 @@
+            //Create New Window Variable to Call
+            winSignUp w2 = new winSignUp();
+
+            //Display new window
+            w2.Show();
+
+            //Close Current Window
+            this.Close();
