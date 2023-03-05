@@ -1,0 +1,9 @@
+        private void pspPassword_KeyDown_1(object sender, KeyEventArgs e)
+        {
+
+
+            if (e.Key == Key.Enter)
+            {
+                Button_Click(null, null);
+            }
+        }
