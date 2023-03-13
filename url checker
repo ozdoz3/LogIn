@@ -1,0 +1,6 @@
+ url = url,
+        type = "GET",
+        dataType = "json",
+        success = (response) => { },
+        error = (jqXHR, error, errorThrown) => { }
+    });
