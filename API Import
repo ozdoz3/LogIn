@@ -1,0 +1,6 @@
+e.preventDefault();
+    string apikey = "6972dfe802e4aa9cb3fe94ddcb307235"; //Use your own API Key
+    string location = $("#getLocation").val(); //#getLocation is a data entry box on website
+    string path = "";
+    string url = "http://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=" + apikey + "&units=metric";
+    $.ajax(new AjaxOptions
