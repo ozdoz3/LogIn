@@ -1,0 +1,7 @@
+        using (var client = new HttpClient())
+        {
+            var response = client.GetAsync(url).Result;
+            var jsonString = response.Content.ReadAsStringAsync().Result;
+            dynamic data = JsonConvert.DeserializeObject(jsonString);
+            string itemDescription = data.item[0].description;
+            double ture = data.main.ture - 273.15;
