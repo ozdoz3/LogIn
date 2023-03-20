@@ -1,3 +1,4 @@
 UPDATE employees
 SET lastname = 'Smith'
 WHERE employeeid = 3;
+string sqlCommand = "UPDATE mytable SET column1=@value1, column2=@value2 WHERE id=@id";
