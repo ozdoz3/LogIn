@@ -1,0 +1,4 @@
+ catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while retrieving the weather data. Error message: {ex.Message}", "Error");
+            }
