@@ -1,0 +1,7 @@
+    public class WeatherData
+        public WeatherMain Main { get; set; }
+        public string Name { get; set; }
+        public Wind Wind { get; set; }
+    public class WeatherMain
+        public double Temp { get; set; }
+        public int Humidity { get; set; }  
