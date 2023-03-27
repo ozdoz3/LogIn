@@ -1,0 +1,9 @@
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    var response = await client.GetAsync(url);
+                    var data = await response.Content.ReadAsStringAsync();
+                    var weather = Newtonsoft.Json.JsonConvert.DeserializeObject<WeatherData>(data);
+                    cityName.Text = weather.Name;
+                    temperature.Text = $"{weather.Main.Temp} °C";
